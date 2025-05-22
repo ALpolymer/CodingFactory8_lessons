@@ -1,6 +1,12 @@
 package gr.aueb.cf.ch12;
 
 public class Student {
+    /*
+    Default constructor
+     */
+    public Student(){
+
+    }
     private int id;
     private String firstname;
     private String lastname;
