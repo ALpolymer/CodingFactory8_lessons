@@ -21,13 +21,13 @@ public class Main {
          */
         Student alice = new Student();
 
-        alice.id =10;              //set id
-        alice.firstname = "Alice"; //set firstname
-        alice.lastname = "W.";     //set lastname
+        alice.setId(10);            //set id
+        alice.setFirstname("Alice"); //set firstname
+        alice.setLastname("w.");     //set lastname
 
-        System.out.println(alice.id);           //get id
-        System.out.println(alice.firstname);    //get firstname
-        System.out.println(alice.lastname);     //get firstname
+        System.out.println(alice.getId());           //get id
+        System.out.println(alice.getFirstname());    //get firstname
+        System.out.println(alice.getLastname());     //get firstname
 
     }
 }
