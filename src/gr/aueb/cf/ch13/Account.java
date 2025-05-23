@@ -85,4 +85,36 @@ public class Account {
             throw e;
         }
     }
+
+    public void withdraw (double amount, String ssn) throws Exception{
+        try {
+            if (amount <0 ) throw new Exception("Negative amount is not valid");
+
+            if (amount > balance){
+                throw new Exception("Insufficient balance for withdrawal");
+            }
+
+            if(!isSsnValid(ssn)){
+                throw new Exception("Ssn is not valid");
+
+            }
+
+            balance = balance - amount;
+        }
+        catch(Exception e){
+            System.err.println("Withdraw failed:" + e);
+        }
+    }
+
+    public double getAccountBalance(){
+        return getBalance();
+    }
+
+    public String accountToString(){
+        return id + ", " + iban + ", " +  firstname + ", " +  lastname + ", " +  ssn + ", " +  balance;
+    }
+
+    private boolean isSsnValid(String ssn){
+        return this.ssn.equals(ssn);
+    }
 }
