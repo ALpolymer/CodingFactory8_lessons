@@ -7,6 +7,15 @@ public class Student {
     public Student(){
 
     }
+
+    /*
+    Overloaded constructor
+     */
+    public Student(int id, String firstname, String lastname){
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
     private int id;
     private String firstname;
     private String lastname;

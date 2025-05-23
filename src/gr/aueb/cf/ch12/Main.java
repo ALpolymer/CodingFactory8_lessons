@@ -23,11 +23,22 @@ public class Main {
 
         alice.setId(10);            //set id
         alice.setFirstname("Alice"); //set firstname
-        alice.setLastname("w.");     //set lastname
+        alice.setLastname("W.");     //set lastname
 
         System.out.println(alice.getId());           //get id
         System.out.println(alice.getFirstname());    //get firstname
         System.out.println(alice.getLastname());     //get firstname
+
+        /*
+        Χρησιμοποιούμε τον overloaded constructor για να δηλώσουμε
+        ένα νέο instance της κλάσης χωρίς setters
+         */
+        Student bob = new Student(20 , "Bob" , "Willis");
+
+        System.out.println(bob.getId());
+        System.out.println(bob.getLastname());
+        System.out.println(bob.getFirstname());
+
 
     }
 }
