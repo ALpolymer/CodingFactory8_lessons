@@ -1,7 +1,6 @@
 package gr.aueb.cf.ch13;
 
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
+
 
 public class Account {
     private int id;
@@ -96,7 +95,6 @@ public class Account {
 
             if(!isSsnValid(ssn)){
                 throw new Exception("Ssn is not valid");
-
             }
 
             balance = balance - amount;
