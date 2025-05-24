@@ -1,5 +1,7 @@
 package gr.aueb.cf.ch14;
 
+import java.util.Random;
+
 public class Point {
     private int x;
     private int y;
@@ -11,6 +13,16 @@ public class Point {
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+
+    //Static Factory Method
+    public static Point getInstance(){
+        return new Point();
+    }
+
+    public static Point getRandomInstance(){
+        Random random = new Random(System.nanoTime());
+        return new Point(random.nextInt(10) +1, random.nextInt() + 1 );
     }
 
     public int getX() {
