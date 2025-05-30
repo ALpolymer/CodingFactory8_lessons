@@ -33,6 +33,11 @@ public class Animal {
         System.out.println("I am an animal");
     }
 
+    public static void doSpeak(Animal animal){
+        System.out.println(animal.toString());
+        animal.speak();
+    }
+
     @Override
     public String toString(){
         return "{" + "name: " + name + " , " + "age: " + age + "}";
