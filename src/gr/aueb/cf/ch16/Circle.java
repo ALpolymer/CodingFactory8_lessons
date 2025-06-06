@@ -3,7 +3,7 @@ package gr.aueb.cf.ch16;
 public class Circle  extends AbstractShape{
     private double radius;
 
-    Circle(){
+    public Circle(){
 
     }
 
