@@ -2,11 +2,12 @@ package gr.aueb.cf.ch16;
 
 abstract class  AbstractShape implements IShape {
 
+    private long id;
+
     AbstractShape() {
         //super()
     }
 
-    private long id;
 
     @Override
     public long getId() {
