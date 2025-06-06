@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch16;
 
-public class Rectangle extends AbstractShape{
+public class Rectangle extends AbstractShape implements ITwoDimensional{
     private double width;
     private double height;
 
@@ -21,11 +21,17 @@ public class Rectangle extends AbstractShape{
         this.width = width;
     }
 
+
     public double getHeight() {
         return height;
     }
 
     public void setHeight(double height) {
         this.height = height;
+    }
+
+    @Override
+    public double getArea() {
+        return width * height;
     }
 }
